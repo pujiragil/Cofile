@@ -5,3 +5,7 @@
 body {
   background: #fff;
 }
+
+.navlink {
+  @apply hover:text-black duration-200 ease-in cursor-pointer;
+}
