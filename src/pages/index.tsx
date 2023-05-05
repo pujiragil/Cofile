@@ -1,4 +1,4 @@
-import { Hero, Navbar } from "@/components";
+import { Hero, Navbar, SponsorShip } from "@/components";
 import Head from "next/head";
 
 export default function App() {
@@ -8,7 +8,10 @@ export default function App() {
         <title>Cofile - Check Currency Exchange Rate in Real Time</title>
       </Head>
       <Navbar />
-      <Hero/>
+      <div className="space-y-24">
+        <Hero />
+        <SponsorShip />
+      </div>
     </main>
   );
 }
