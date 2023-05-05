@@ -1,6 +1,6 @@
 const Navbar = () => {
   return (
-    <nav className="flex justify-between items-center">
+    <nav className="flex justify-between items-center py-2 px-6">
       <img
         className="h-10 w-auto object-cover"
         src="/cofile.png"
