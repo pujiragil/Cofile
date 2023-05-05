@@ -7,7 +7,7 @@ const Navbar = () => {
         alt="cofile"
       />
       <img
-        className="w-8 h-8 object-cover md:hidden"
+        className="w-8 h-8 object-cover cursor-pointer md:hidden"
         src="/hamburger.svg"
         alt="hamburger"
       />
