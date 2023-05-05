@@ -25,7 +25,7 @@ const Card: FC<CardProps> = ({ orderBy, title, description, imageLink }) => {
         }`}
       >
         <img
-          className="w-full h-auto object-cover sm:w-2/3 lg:w-10/12"
+          className="w-full h-auto object-cover sm:w-2/3 md:w-full lg:w-10/12"
           src={imageLink}
           alt="card-image"
         />
