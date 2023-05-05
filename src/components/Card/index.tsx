@@ -16,7 +16,9 @@ const Card: FC<CardProps> = ({ orderBy, title, description, imageLink }) => {
         }`}
       >
         <h2 className="text-primary-100 text-[28px] font-semibold">{title}</h2>
-        <p className="text-primary-200 leading-6 sm:w-3/5 lg:w-10/12">{description}</p>
+        <p className="text-primary-200 leading-6 sm:w-3/5 lg:w-10/12">
+          {description}
+        </p>
       </div>
 
       <div
@@ -34,4 +36,25 @@ const Card: FC<CardProps> = ({ orderBy, title, description, imageLink }) => {
   );
 };
 
-export default Card;
+const CardMain = () => {
+  return (
+    <div className="flex justify-center px-6">
+      <div className="max-w-[908px] space-y-24">
+        <Card
+          orderBy="content"
+          title="Easy to Use"
+          description="Our clean and intuitive design will help you operate the apps easily"
+          imageLink="/card-1.png"
+        />
+        <Card
+          orderBy="image"
+          title="Upgrade When You Need"
+          description="We committed to provide the free plan forever. Once you need an upgrade, we will be there for you"
+          imageLink="/card-2.png"
+        />
+      </div>
+    </div>
+  );
+};
+
+export default CardMain;
