@@ -30,11 +30,11 @@ const CardItem: FC<CardItemProps> = ({ avatar, name, job, description }) => {
 const CardTestimonials = () => {
   return (
     <section className="px-6 flex justify-center">
-      <div className="max-w-[908px] space-y-1">
+      <div className="max-w-[908px] space-y-1 sm:w-2/3 md:w-full">
         <h2 className="text-2xl font-semibold text-primary-100 leading-32">
           Testimonials
         </h2>
-        <div className="py-8 flex flex-col gap-12">
+        <div className="py-8 flex flex-col gap-12 md:flex-row">
           <CardItem
             avatar="/testimonial-1.png"
             name="Ashley Rock"

@@ -9,14 +9,14 @@ interface CardProps {
 
 const Card: FC<CardProps> = ({ orderBy, title, description, imageLink }) => {
   return (
-    <section className="flex flex-col gap-12 md:flex-row">
+    <section className="flex flex-col gap-12 sm:items-center md:flex-row">
       <div
-        className={`pt-20 space-y-4 basis-1/2 ${
+        className={`pt-20 space-y-4 basis-1/2 sm:w-3/5 md:w-full ${
           orderBy === "content" ? "order-1" : "order-2"
         }`}
       >
         <h2 className="text-primary-100 text-[28px] font-semibold">{title}</h2>
-        <p className="text-primary-200 leading-6 sm:w-3/5 lg:w-10/12">
+        <p className="text-primary-200 leading-6 sm:w-4/5 lg:w-10/12">
           {description}
         </p>
       </div>
@@ -27,7 +27,7 @@ const Card: FC<CardProps> = ({ orderBy, title, description, imageLink }) => {
         }`}
       >
         <img
-          className="w-full h-auto object-cover sm:w-2/3 md:w-full lg:w-10/12"
+          className="w-full h-auto object-cover sm:w-full lg:w-10/12"
           src={imageLink}
           alt="card-image"
         />

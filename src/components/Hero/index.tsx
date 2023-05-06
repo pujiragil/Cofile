@@ -2,7 +2,7 @@ const Hero = () => {
   return (
     <section className="flex justify-center py-4 px-6">
       <div className="max-w-[908px] flex flex-col items-center gap-10 md:flex-row">
-        <div className="flex flex-col">
+        <div className="flex flex-col sm:w-4/5 sm:text-center md:w-full md:text-left">
           <div className="pt-12 space-y-2">
             <h1 className="text-4xl font-semibold text-primary-100 leading-[48px]">
               Check Currency Exchange Rate in Real Time
@@ -11,7 +11,7 @@ const Hero = () => {
               Monitor your worldwide business with this handy apps
             </p>
           </div>
-          <div className="py-5 flex flex-col gap-2 sm:flex-row md:flex-col lg:flex-row">
+          <div className="py-5 flex flex-col gap-2 sm:flex-row sm:justify-center md:justify-normal md:flex-col lg:flex-row">
             <img
               className="w-[170px] h-auto object-contain lg:w-40"
               src="/app-store.png"
