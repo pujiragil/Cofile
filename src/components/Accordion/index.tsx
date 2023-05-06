@@ -14,12 +14,16 @@ const AccordionItem: FC<AccordionItemProps> = ({
   description,
 }) => {
   return (
-    <div
-      onClick={handleOpen}
-      className="py-5 border-b border-primary-300 space-y-6 first:pt-0 last:pb-0 last:border-none"
-    >
-      <div className="pl-8 flex items-start gap-3 text-primary-100 font-semibold leading-8 relative">
-        <h2 className={`text-2xl cursor-pointer before:content-['‣'] before:text-[28px] before:absolute before:left-2 ${isOpen ? "before:rotate-90" : "before:rotate-0"} before:transition-all before:duration-200 before:ease-in`}>
+    <div className="py-5 border-b border-primary-300 space-y-6 first:pt-0 last:pb-0 last:border-none">
+      <div
+        onClick={handleOpen}
+        className="pl-8 flex items-start gap-3 text-primary-100 font-semibold leading-8 relative"
+      >
+        <h2
+          className={`text-2xl cursor-pointer before:content-['‣'] before:text-[28px] before:absolute before:left-2 ${
+            isOpen ? "before:rotate-90" : "before:rotate-0"
+          } before:transition-all before:duration-200 before:ease-in`}
+        >
           {title}
         </h2>
       </div>
