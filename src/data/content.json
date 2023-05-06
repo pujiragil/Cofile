@@ -1,0 +1,95 @@
+{
+  "home": {
+    "hero": {
+      "title": "Check Currency Exchange Rate in Real Time",
+      "description": "Monitor your worldwide business with this handy apps",
+      "stores": [
+        {
+          "id": 1,
+          "img": "/app-store.png"
+        },
+        {
+          "id": 2,
+          "img": "/play-store.png"
+        }
+      ],
+      "mainImg": "/main.png"
+    },
+    "sponsorship": {
+      "title": "Trusted by",
+      "brands": [
+        {
+          "id": 1,
+          "img": "/paple.png"
+        },
+        {
+          "id": 2,
+          "img": "/masbobz.png"
+        },
+        {
+          "id": 3,
+          "img": "/notion.png"
+        },
+        {
+          "id": 4,
+          "img": "/super.png"
+        }
+      ]
+    },
+    "main": [
+      {
+        "id": 1,
+        "title": "Easy to Use",
+        "description": "Our clean and intuitive design will help you operate the apps easily",
+        "mainImg": "/card-1.png",
+        "orderBy": "content"
+      },
+      {
+        "id": 2,
+        "title": "Upgrade When You Need",
+        "description": "We committed to provide the free plan forever. Once you need an upgrade, we will be there for you",
+        "mainImg": "/card-2.png",
+        "orderBy": "image"
+      }
+    ],
+    "features": [
+      {
+        "id": 1,
+        "img": "/features-1.png",
+        "title": "24 Hours Customer Service",
+        "description": "We respect your passion to run your business by always accompany you"
+      },
+      {
+        "id": 2,
+        "img": "/features-2.png",
+        "title": "Currencies All Over The World",
+        "description": "Our complete and real-time currencies database will help your business"
+      },
+      {
+        "id": 3,
+        "img": "/features-3.png",
+        "title": "Upgrade Once You Ready",
+        "description": "No worries, we always welcome you once you ready to upgrade"
+      }
+    ],
+    "testimonials": {
+      "title": "Testimonials",
+      "datas": [
+        {
+          "id": 1,
+          "avatar": "/testimonial-1.png",
+          "name": "Ashley Rock",
+          "job": "Founder of Paple",
+          "description": "Really happy with the product and kind services provided by Cofile. Will recommend it to the world!"
+        },
+        {
+          "id": 2,
+          "avatar": "/testimonial-2.png",
+          "name": "Natalie Bloom",
+          "job": "Marketing of Simpage",
+          "description": "Top class product and services! Since my first sign up, they helped my team a lot."
+        }
+      ]
+    }
+  }
+}
