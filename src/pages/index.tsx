@@ -1,6 +1,7 @@
 import {
   CardMain,
   CardFeatures,
+  CardTestimonials,
   Hero,
   Navbar,
   SponsorShip,
@@ -19,6 +20,7 @@ export default function App() {
         <SponsorShip />
         <CardMain />
         <CardFeatures />
+        <CardTestimonials />
       </div>
     </main>
   );
