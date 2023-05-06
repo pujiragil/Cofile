@@ -1,4 +1,5 @@
 import React, { FC, useState } from "react";
+import datas from "../../data/content.json";
 
 interface AccordionItemProps {
   isOpen: boolean;
@@ -38,9 +39,27 @@ const AccordionItem: FC<AccordionItemProps> = ({
 
 type SelectedAccordionProps = "first" | "second" | "third" | "";
 
+interface ItemProps {
+  id: number;
+  selected: SelectedAccordionProps;
+  title: string;
+  description: string;
+}
+
+interface AccordionsContentProps {
+  img: string;
+  title: string;
+  datas: ItemProps[];
+}
+
 const Accordions = () => {
   const [selectedAccordion, setSelectAccordion] =
     useState<SelectedAccordionProps>("");
+  const {
+    title,
+    img,
+    datas: accordions,
+  } = datas.home.accordions as AccordionsContentProps;
 
   const handleSelectedAccordion = (
     currentAccordion: SelectedAccordionProps
@@ -57,30 +76,21 @@ const Accordions = () => {
     <section className="flex justify-center p-6">
       <div className="max-w-[908px] flex flex-col gap-12 sm:w-2/3 md:w-full md:flex-row">
         <div className="py-5 space-y-4 md:basis-1/2">
-          <img className="w-12 h-12 object-cover" src="/faq.png" alt="faq" />
+          <img className="w-12 h-12 object-cover" src={img} alt="faq" />
           <h2 className="text-primary-100 text-[28px] font-semibold">
-            Frequently Asked Questions
+            {title}
           </h2>
         </div>
         <div className="flex flex-col py-6 md:basis-1/2">
-          <AccordionItem
-            isOpen={selectedAccordion === "first"}
-            handleOpen={() => handleSelectedAccordion("first")}
-            title="Is there any limitation for free plan?"
-            description="Of course there are limitations to the free plan. But you don't need to worry about the free plan, because we also provide various features for users with the free plan"
-          />
-          <AccordionItem
-            isOpen={selectedAccordion === "second"}
-            handleOpen={() => handleSelectedAccordion("second")}
-            title="What is the minimum specification to run the apps on Android or iOS?"
-            description="There are no minimum specifications to run Cofile on your device. Cofile is designed for all devices and emphasizes the user experience"
-          />
-          <AccordionItem
-            isOpen={selectedAccordion === "third"}
-            handleOpen={() => handleSelectedAccordion("third")}
-            title="Can I downgrade the plan?"
-            description="Unfortunately you cannot downgrade plan on Cofile. However, the plan will automatically downgrade when the plan deadline expires and no plan extensions are made"
-          />
+          {accordions.map((accordion) => (
+            <AccordionItem
+              key={accordion.id}
+              isOpen={selectedAccordion === accordion.selected}
+              handleOpen={() => handleSelectedAccordion(accordion.selected)}
+              title={accordion.title}
+              description={accordion.description}
+            />
+          ))}
         </div>
       </div>
     </section>
