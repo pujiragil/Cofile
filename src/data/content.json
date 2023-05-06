@@ -90,6 +90,80 @@
           "description": "Top class product and services! Since my first sign up, they helped my team a lot."
         }
       ]
+    },
+    "accordions": {
+      "img": "/faq.png",
+      "title": "Frequently Asked Questions",
+      "datas": [
+        {
+          "id": 1,
+          "selected": "first",
+          "title": "Is there any limitation for free plan?",
+          "description": "Of course there are limitations to the free plan. But you don't need to worry about the free plan, because we also provide various features for users with the free plan"
+        },
+        {
+          "id": 2,
+          "selected": "second",
+          "title": "What is the minimum specification to run the apps on Android or iOS?",
+          "description": "There are no minimum specifications to run Cofile on your device. Cofile is designed for all devices and emphasizes the user experience"
+        },
+        {
+          "id": 3,
+          "selected": "third",
+          "title": "Can I downgrade the plan?",
+          "description": "Unfortunately you cannot downgrade plan on Cofile. However, the plan will automatically downgrade when the plan deadline expires and no plan extensions are made"
+        }
+      ]
+    },
+    "promote": {
+      "title": "Get it Now",
+      "description": "Monitor your worldwide business with this handy apps",
+      "stores": [
+        {
+          "id": 1,
+          "img": "/app-store.png"
+        },
+        {
+          "id": 2,
+          "img": "/play-store.png"
+        }
+      ],
+      "mainImg": "/promote.png"
+    },
+    "footer": {
+      "mainImg": "/cofile.png",
+      "socials": [
+        {
+          "id": 1,
+          "img": "/instagram.svg"
+        },
+        {
+          "id": 2,
+          "img": "/twitter.svg"
+        },
+        {
+          "id": 3,
+          "img": "/dribbble.svg"
+        },
+        {
+          "id": 4,
+          "img": "/medium.svg"
+        }
+      ],
+      "menus": [
+        {
+          "id": 1,
+          "link": "Home"
+        },
+        {
+          "id": 2,
+          "link": "About us"
+        },
+        {
+          "id": 3,
+          "link": "Pricing"
+        }
+      ]
     }
   }
 }
