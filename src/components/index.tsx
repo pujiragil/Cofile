@@ -4,3 +4,4 @@ export { default as SponsorShip } from "./SponsorShip";
 export { default as CardMain } from "./Card";
 export { default as CardFeatures } from "./Card/CardFeature";
 export { default as CardTestimonials } from "./Card/CardTestimonial";
+export { default as Accordions } from "./Accordion";
