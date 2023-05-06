@@ -5,6 +5,7 @@ import {
   Hero,
   Navbar,
   SponsorShip,
+  Accordions,
 } from "@/components";
 import Head from "next/head";
 
@@ -21,6 +22,7 @@ export default function App() {
         <CardMain />
         <CardFeatures />
         <CardTestimonials />
+        <Accordions />
       </div>
     </main>
   );
