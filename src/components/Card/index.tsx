@@ -1,4 +1,5 @@
 import { FC } from "react";
+import datas from "../../data/content.json";
 
 interface CardProps {
   orderBy: "content" | "image";
@@ -36,22 +37,29 @@ const Card: FC<CardProps> = ({ orderBy, title, description, imageLink }) => {
   );
 };
 
+interface CardItemProps {
+  id: number;
+  title: string;
+  description: string;
+  mainImg: string;
+  orderBy: "content" | "image";
+}
+
 const CardMain = () => {
+  const cards = datas.home.main as CardItemProps[];
+
   return (
     <div className="flex justify-center px-6">
       <div className="max-w-[908px] space-y-24">
-        <Card
-          orderBy="content"
-          title="Easy to Use"
-          description="Our clean and intuitive design will help you operate the apps easily"
-          imageLink="/card-1.png"
-        />
-        <Card
-          orderBy="image"
-          title="Upgrade When You Need"
-          description="We committed to provide the free plan forever. Once you need an upgrade, we will be there for you"
-          imageLink="/card-2.png"
-        />
+        {cards.map((card) => (
+          <Card
+            key={card.id}
+            orderBy={card.orderBy}
+            title={card.title}
+            description={card.description}
+            imageLink={card.mainImg}
+          />
+        ))}
       </div>
     </div>
   );

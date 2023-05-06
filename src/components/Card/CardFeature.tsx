@@ -1,4 +1,5 @@
 import { FC } from "react";
+import datas from "../../data/content.json";
 
 interface CardItemProps {
   title: string;
@@ -16,33 +17,33 @@ const CardItem: FC<CardItemProps> = ({ title, description, imageLink }) => {
       />
       <div className="space-y-2 w-fit">
         <h2 className="text-2xl font-semibold text-primary-100">{title}</h2>
-        <p className="text-primary-200 leading-6">
-          {description}
-        </p>
+        <p className="text-primary-200 leading-6">{description}</p>
       </div>
     </div>
   );
 };
 
+interface CardFeaturesContentProps {
+  id: number;
+  img: string;
+  title: string;
+  description: string;
+}
+
 const CardFeatures = () => {
+  const features = datas.home.features as CardFeaturesContentProps[];
+
   return (
     <section className="flex justify-center px-6 py-16">
       <div className="max-w-[908px] flex flex-col gap-12 sm:justify-center sm:items-center md:items-start md:flex-row">
-        <CardItem
-          title="24 Hours Customer Service"
-          description="We respect your passion to run your business by always accompany you"
-          imageLink="/features-1.png"
-        />
-        <CardItem
-          title="Currencies All Over The World"
-          description="Our complete and real-time currencies database will help your business"
-          imageLink="/features-2.png"
-        />
-        <CardItem
-          title="Upgrade Once You Ready"
-          description="No worries, we always welcome you once you ready to upgrade"
-          imageLink="/features-3.png"
-        />
+        {features.map((feature) => (
+          <CardItem
+            key={feature.id}
+            title={feature.title}
+            description={feature.description}
+            imageLink={feature.img}
+          />
+        ))}
       </div>
     </section>
   );

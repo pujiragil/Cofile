@@ -1,4 +1,5 @@
 import { FC } from "react";
+import datas from "../../data/content.json";
 
 interface CardItemProps {
   description: string;
@@ -27,26 +28,39 @@ const CardItem: FC<CardItemProps> = ({ avatar, name, job, description }) => {
   );
 };
 
+interface CardTestimonialsContentProps {
+  title: string;
+  datas: CardDataProps[];
+}
+
+interface CardDataProps {
+  id: number;
+  avatar: string;
+  name: string;
+  job: string;
+  description: string;
+}
+
 const CardTestimonials = () => {
+  const { title, datas: testimonials } = datas.home
+    .testimonials as CardTestimonialsContentProps;
+
   return (
     <section className="px-6 flex justify-center">
       <div className="max-w-[908px] space-y-1 sm:w-2/3 md:w-full">
         <h2 className="text-2xl font-semibold text-primary-100 leading-32">
-          Testimonials
+          {title}
         </h2>
         <div className="py-8 flex flex-col gap-12 md:flex-row">
-          <CardItem
-            avatar="/testimonial-1.png"
-            name="Ashley Rock"
-            job="Founder of Paple"
-            description="Really happy with the product and kind services provided by Cofile. Will recommend it to the world!"
-          />
-          <CardItem
-            avatar="/testimonial-2.png"
-            name="Natalie Bloom"
-            job="Marketing of Simpage"
-            description="Top class product and services! Since my first sign up, they helped my team a lot."
-          />
+          {testimonials.map((testimonial) => (
+            <CardItem
+              key={testimonial.id}
+              avatar={testimonial.avatar}
+              name={testimonial.name}
+              job={testimonial.job}
+              description={testimonial.description}
+            />
+          ))}
         </div>
       </div>
     </section>
