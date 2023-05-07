@@ -1,6 +1,13 @@
 import React, { FC, useState } from "react";
 import datas from "../../data/content.json";
-import { Heading, HeadingType } from "../globals";
+import {
+  Heading,
+  HeadingType,
+  Paragraph,
+  ParagraphColor,
+  ParagraphSize,
+  ParagraphWeight,
+} from "../globals";
 
 interface AccordionItemProps {
   isOpen: boolean;
@@ -31,7 +38,12 @@ const AccordionItem: FC<AccordionItemProps> = ({
       </div>
       {isOpen && (
         <div className="pl-8">
-          <p className="text-primary-200 leading-6">{description}</p>
+          <Paragraph
+            size={ParagraphSize.BS}
+            weight={ParagraphWeight.N}
+            color={ParagraphColor.SECONDARY}
+            value={description}
+          />
         </div>
       )}
     </div>

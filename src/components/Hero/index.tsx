@@ -1,5 +1,12 @@
 import datas from "../../data/content.json";
-import { Heading, HeadingType } from "../globals";
+import {
+  Heading,
+  HeadingType,
+  Paragraph,
+  ParagraphColor,
+  ParagraphSize,
+  ParagraphWeight,
+} from "../globals";
 
 interface HeroContentProps {
   title: string;
@@ -18,7 +25,12 @@ const Hero = () => {
         <div className="flex flex-col sm:w-4/5 sm:text-center md:w-full md:text-left">
           <div className="pt-12 space-y-2">
             <Heading type={HeadingType.H1} value={title} />
-            <p className="text-primary-200 leading-6">{description}</p>
+            <Paragraph
+              size={ParagraphSize.BS}
+              weight={ParagraphWeight.N}
+              color={ParagraphColor.SECONDARY}
+              value={description}
+            />
           </div>
           <div className="py-5 flex flex-col gap-2 sm:flex-row sm:justify-center md:justify-normal md:flex-col lg:flex-row">
             {stores.map((store) => (

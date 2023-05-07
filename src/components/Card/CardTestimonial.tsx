@@ -1,6 +1,13 @@
 import { FC } from "react";
 import datas from "../../data/content.json";
-import { Heading, HeadingType } from "../globals";
+import {
+  Heading,
+  HeadingType,
+  Paragraph,
+  ParagraphColor,
+  ParagraphSize,
+  ParagraphWeight,
+} from "../globals";
 
 interface CardItemProps {
   description: string;
@@ -16,12 +23,26 @@ const CardItem: FC<CardItemProps> = ({ avatar, name, job, description }) => {
       <div className="space-y-2">
         <p className="font-semibold text-4xl text-secondary-100">“ ”</p>
         <div className="flex flex-col leading-6">
-          <h3 className="text-primary-100 font-semibold pb-2 border-b border-primary-300">
-            {description}
-          </h3>
-          <div className="space-y-4 pt-2">
-            <p className="text-primary-100">{name}</p>
-            <p className="text-primary-200">{job}</p>
+          <Paragraph
+            size={ParagraphSize.BS}
+            weight={ParagraphWeight.SB}
+            color={ParagraphColor.PRIMARY}
+            value={description}
+            styles="pb-2"
+          />
+          <div className="space-y-4 pt-2 border-t border-primary-300">
+            <Paragraph
+              size={ParagraphSize.BS}
+              weight={ParagraphWeight.N}
+              color={ParagraphColor.PRIMARY}
+              value={name}
+            />
+            <Paragraph
+              size={ParagraphSize.BS}
+              weight={ParagraphWeight.N}
+              color={ParagraphColor.SECONDARY}
+              value={job}
+            />
           </div>
         </div>
       </div>

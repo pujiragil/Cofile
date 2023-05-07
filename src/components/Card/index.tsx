@@ -1,6 +1,13 @@
 import { FC } from "react";
 import datas from "../../data/content.json";
-import { Heading, HeadingType } from "../globals";
+import {
+  Heading,
+  HeadingType,
+  Paragraph,
+  ParagraphColor,
+  ParagraphSize,
+  ParagraphWeight,
+} from "../globals";
 
 interface CardProps {
   orderBy: "content" | "image";
@@ -17,10 +24,14 @@ const Card: FC<CardProps> = ({ orderBy, title, description, imageLink }) => {
           orderBy === "content" ? "order-1" : "order-2"
         }`}
       >
-        <Heading type={HeadingType.H2} value={title}/>
-        <p className="text-primary-200 leading-6 sm:w-4/5 lg:w-10/12">
-          {description}
-        </p>
+        <Heading type={HeadingType.H2} value={title} />
+        <Paragraph
+          size={ParagraphSize.BS}
+          weight={ParagraphWeight.N}
+          color={ParagraphColor.SECONDARY}
+          value={description}
+          styles="sm:w-4/5 lg:w-10/12"
+        />
       </div>
 
       <div

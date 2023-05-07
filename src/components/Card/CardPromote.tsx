@@ -1,5 +1,12 @@
 import datas from "../../data/content.json";
-import { Heading, HeadingType } from "../globals";
+import {
+  Heading,
+  HeadingType,
+  Paragraph,
+  ParagraphColor,
+  ParagraphSize,
+  ParagraphWeight,
+} from "../globals";
 
 interface CardPromoteContentProps {
   title: string;
@@ -18,7 +25,12 @@ const CardPromote = () => {
         <div className="space-y-10 md:basis-1/2">
           <div className="space-y-4">
             <Heading type={HeadingType.H2} value={title} />
-            <p className="text-primary-200 leading-6">{description}</p>
+            <Paragraph
+              size={ParagraphSize.BS}
+              weight={ParagraphWeight.N}
+              color={ParagraphColor.SECONDARY}
+              value={description}
+            />
           </div>
           <div className="py-5 flex flex-col gap-4 sm:flex-row sm:justify-center md:flex-col">
             {stores.map((store) => (

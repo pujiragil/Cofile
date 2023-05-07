@@ -1,6 +1,13 @@
 import { FC } from "react";
 import datas from "../../data/content.json";
-import { Heading, HeadingType } from "../globals";
+import {
+  Heading,
+  HeadingType,
+  Paragraph,
+  ParagraphColor,
+  ParagraphSize,
+  ParagraphWeight,
+} from "../globals";
 
 interface CardItemProps {
   title: string;
@@ -18,7 +25,12 @@ const CardItem: FC<CardItemProps> = ({ title, description, imageLink }) => {
       />
       <div className="space-y-2 w-fit">
         <Heading type={HeadingType.H3} value={title} />
-        <p className="text-primary-200 leading-6">{description}</p>
+        <Paragraph
+          size={ParagraphSize.BS}
+          weight={ParagraphWeight.N}
+          color={ParagraphColor.SECONDARY}
+          value={description}
+        />
       </div>
     </div>
   );
