@@ -1,4 +1,5 @@
 import datas from "../../data/content.json";
+import { Heading, HeadingType } from "../globals";
 
 interface CardPromoteContentProps {
   title: string;
@@ -16,9 +17,7 @@ const CardPromote = () => {
       <div className="max-w-[908px] flex flex-col gap-12 w-full sm:w-2/3 md:w-full md:flex-row">
         <div className="space-y-10 md:basis-1/2">
           <div className="space-y-4">
-            <h2 className="text-primary-100 text-[28px] font-semibold">
-              {title}
-            </h2>
+            <Heading type={HeadingType.H2} value={title} />
             <p className="text-primary-200 leading-6">{description}</p>
           </div>
           <div className="py-5 flex flex-col gap-4 sm:flex-row sm:justify-center md:flex-col">

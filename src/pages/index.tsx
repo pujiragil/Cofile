@@ -3,11 +3,9 @@ import {
   CardFeatures,
   CardTestimonials,
   Hero,
-  Navbar,
   SponsorShip,
   Accordions,
   CardPromote,
-  Footer,
 } from "@/components";
 import Head from "next/head";
 

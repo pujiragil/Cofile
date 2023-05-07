@@ -1,4 +1,5 @@
 import datas from "../../data/content.json";
+import { Heading, HeadingType } from "../globals";
 
 interface HeroContentProps {
   title: string;
@@ -16,9 +17,7 @@ const Hero = () => {
       <div className="max-w-[908px] flex flex-col items-center gap-10 md:flex-row">
         <div className="flex flex-col sm:w-4/5 sm:text-center md:w-full md:text-left">
           <div className="pt-12 space-y-2">
-            <h1 className="text-4xl font-semibold text-primary-100 leading-[48px]">
-              {title}
-            </h1>
+            <Heading type={HeadingType.H1} value={title} />
             <p className="text-primary-200 leading-6">{description}</p>
           </div>
           <div className="py-5 flex flex-col gap-2 sm:flex-row sm:justify-center md:justify-normal md:flex-col lg:flex-row">

@@ -1,5 +1,6 @@
 import { FC } from "react";
 import datas from "../../data/content.json";
+import { Heading, HeadingType } from "../globals";
 
 interface CardItemProps {
   title: string;
@@ -16,7 +17,7 @@ const CardItem: FC<CardItemProps> = ({ title, description, imageLink }) => {
         alt="features-1"
       />
       <div className="space-y-2 w-fit">
-        <h2 className="text-2xl font-semibold text-primary-100">{title}</h2>
+        <Heading type={HeadingType.H3} value={title} />
         <p className="text-primary-200 leading-6">{description}</p>
       </div>
     </div>

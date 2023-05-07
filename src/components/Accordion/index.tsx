@@ -1,5 +1,6 @@
 import React, { FC, useState } from "react";
 import datas from "../../data/content.json";
+import { Heading, HeadingType } from "../globals";
 
 interface AccordionItemProps {
   isOpen: boolean;
@@ -20,13 +21,13 @@ const AccordionItem: FC<AccordionItemProps> = ({
         onClick={handleOpen}
         className="pl-8 flex items-start gap-3 text-primary-100 font-semibold leading-8 relative"
       >
-        <h2
-          className={`text-2xl cursor-pointer before:content-['‣'] before:text-[28px] before:absolute before:left-2 ${
+        <Heading
+          type={HeadingType.H3}
+          value={title}
+          styles={`cursor-pointer before:content-['‣'] before:text-[28px] before:absolute before:left-2 ${
             isOpen ? "before:rotate-90" : "before:rotate-0"
           } before:transition-all before:duration-200 before:ease-in`}
-        >
-          {title}
-        </h2>
+        />
       </div>
       {isOpen && (
         <div className="pl-8">
@@ -77,9 +78,7 @@ const Accordions = () => {
       <div className="max-w-[908px] flex flex-col gap-12 sm:w-2/3 md:w-full md:flex-row">
         <div className="py-5 space-y-4 md:basis-1/2">
           <img className="w-12 h-12 object-cover" src={img} alt="faq" />
-          <h2 className="text-primary-100 text-[28px] font-semibold">
-            {title}
-          </h2>
+          <Heading type={HeadingType.H2} value={title} />
         </div>
         <div className="flex flex-col py-6 md:basis-1/2">
           {accordions.map((accordion) => (

@@ -1,5 +1,6 @@
 import { FC } from "react";
 import datas from "../../data/content.json";
+import { Heading, HeadingType } from "../globals";
 
 interface CardProps {
   orderBy: "content" | "image";
@@ -16,7 +17,7 @@ const Card: FC<CardProps> = ({ orderBy, title, description, imageLink }) => {
           orderBy === "content" ? "order-1" : "order-2"
         }`}
       >
-        <h2 className="text-primary-100 text-[28px] font-semibold">{title}</h2>
+        <Heading type={HeadingType.H2} value={title}/>
         <p className="text-primary-200 leading-6 sm:w-4/5 lg:w-10/12">
           {description}
         </p>

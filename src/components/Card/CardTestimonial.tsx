@@ -1,5 +1,6 @@
 import { FC } from "react";
 import datas from "../../data/content.json";
+import { Heading, HeadingType } from "../globals";
 
 interface CardItemProps {
   description: string;
@@ -48,9 +49,7 @@ const CardTestimonials = () => {
   return (
     <section className="px-6 flex justify-center">
       <div className="max-w-[908px] space-y-1 sm:w-2/3 md:w-full">
-        <h2 className="text-2xl font-semibold text-primary-100 leading-32">
-          {title}
-        </h2>
+        <Heading type={HeadingType.H3} value={title} />
         <div className="py-8 flex flex-col gap-12 md:flex-row">
           {testimonials.map((testimonial) => (
             <CardItem
