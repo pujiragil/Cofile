@@ -1,7 +1,19 @@
+import {
+  AboutBanner,
+  AboutContent,
+  AboutMilestones,
+  AboutTeam,
+} from "@/components";
+
 const About = () => {
   return (
-    <div>About</div>
-  )
-}
+    <>
+      <AboutContent />
+      <AboutBanner />
+      <AboutMilestones />
+      <AboutTeam />
+    </>
+  );
+};
 
-export default About
+export default About;
