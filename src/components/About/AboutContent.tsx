@@ -10,7 +10,7 @@ import {
 const AboutContent = () => {
   return (
     <div className="container mx-auto px-6 py-16 flex justify-center">
-      <div className="max-w-[908px] flex flex-col gap-12 md:flex-row md:justify-start">
+      <div className="max-w-[908px] flex flex-col gap-12 sm:w-4/5 md:w-full md:flex-row md:justify-start">
         <Heading
           type={HeadingType.H1}
           value="We are a Group of Individuals With a Big Mission"
