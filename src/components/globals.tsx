@@ -1,9 +1,9 @@
 import { FC } from "react";
 
 export enum HeadingType {
-  H1 = "h1",
-  H2 = "h2",
-  H3 = "h3",
+  H1,
+  H2,
+  H3,
 }
 
 interface HeadingProps {
@@ -45,4 +45,38 @@ export const Heading: FC<HeadingProps> = ({
     default:
       return null;
   }
+};
+
+export enum ParagraphSize {
+  BS = "text-base",
+  LG = "text-lg",
+}
+
+export enum ParagraphWeight {
+  N = "font-normal",
+  SB = "font-semibold",
+}
+
+export enum ParagraphColor {
+  PRIMARY = "text-primary-100",
+  SECONDARY = "text-primary-200",
+  TERTIARY = "text-secondary-100",
+}
+
+interface ParagraphProps {
+  value: string;
+  size: ParagraphSize;
+  weight: ParagraphWeight;
+  color: ParagraphColor;
+  styles?: string;
+}
+
+export const Paragraph: FC<ParagraphProps> = ({
+  value,
+  size,
+  weight,
+  color,
+  styles = ""
+}): JSX.Element => {
+  return <p className={`${size} ${weight} ${color} ${styles}`}>{value}</p>;
 };
