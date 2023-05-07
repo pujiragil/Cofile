@@ -17,7 +17,7 @@ interface CardItemProps {
 
 const CardItem: FC<CardItemProps> = ({ title, description, imageLink }) => {
   return (
-    <div className="flex flex-col gap-4 sm:w-2/3 md:w-full">
+    <div className="flex flex-col gap-4">
       <img
         className="w-12 h-12 object-cover"
         src={imageLink}
@@ -48,7 +48,7 @@ const CardFeatures = () => {
 
   return (
     <section className="flex justify-center px-6 py-16">
-      <div className="max-w-[908px] flex flex-col gap-12 sm:justify-center sm:items-center md:items-start md:flex-row">
+      <div className="max-w-[908px] flex flex-col gap-12 sm:justify-center sm:items-center sm:w-4/5 md:w-full md:items-start md:flex-row">
         {features.map((feature) => (
           <CardItem
             key={feature.id}

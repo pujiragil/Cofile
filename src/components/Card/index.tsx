@@ -20,7 +20,7 @@ const Card: FC<CardProps> = ({ orderBy, title, description, imageLink }) => {
   return (
     <section className="flex flex-col gap-12 sm:items-center md:flex-row">
       <div
-        className={`pt-20 space-y-4 basis-1/2 sm:w-3/5 md:w-full ${
+        className={`pt-20 space-y-4 basis-1/2 ${
           orderBy === "content" ? "order-1" : "order-2"
         }`}
       >
@@ -62,7 +62,7 @@ const CardMain = () => {
 
   return (
     <div className="flex justify-center px-6">
-      <div className="max-w-[908px] space-y-24">
+      <div className="max-w-[908px] space-y-24 sm:w-4/5 md:w-full">
         {cards.map((card) => (
           <Card
             key={card.id}

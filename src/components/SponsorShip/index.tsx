@@ -11,7 +11,7 @@ const SponsorShip = () => {
 
   return (
     <div className="px-6 flex justify-center">
-      <div className="max-w-[908px] w-full space-y-8 md:space-y-1">
+      <div className="max-w-[908px] w-full space-y-8 sm:w-4/5 md:w-full md:space-y-1">
         <Heading
           type={HeadingType.H3}
           styles="text-center md:text-left"
@@ -21,7 +21,7 @@ const SponsorShip = () => {
           {brands.map((brand) => (
             <img
               key={brand.id}
-              className="w-48 h-auto object-cover sm:w-2/5 md:w-full"
+              className="w-48 h-auto object-cover"
               src={brand.img}
               alt="paple"
             />

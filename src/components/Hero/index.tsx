@@ -21,8 +21,8 @@ const Hero = () => {
 
   return (
     <section className="flex justify-center py-4 px-6">
-      <div className="max-w-[908px] flex flex-col items-center gap-10 md:flex-row">
-        <div className="flex flex-col sm:w-4/5 sm:text-center md:w-full md:text-left">
+      <div className="max-w-[908px] flex flex-col items-center gap-10 sm:w-4/5 md:w-full md:flex-row">
+        <div className="flex flex-col sm:text-center md:text-left">
           <div className="pt-12 space-y-2">
             <Heading type={HeadingType.H1} value={title} />
             <Paragraph

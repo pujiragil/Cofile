@@ -87,7 +87,7 @@ const Accordions = () => {
 
   return (
     <section className="flex justify-center p-6">
-      <div className="max-w-[908px] flex flex-col gap-12 sm:w-2/3 md:w-full md:flex-row">
+      <div className="max-w-[908px] flex flex-col gap-12 sm:w-4/5 md:w-full md:flex-row">
         <div className="py-5 space-y-4 md:basis-1/2">
           <img className="w-12 h-12 object-cover" src={img} alt="faq" />
           <Heading type={HeadingType.H2} value={title} />
