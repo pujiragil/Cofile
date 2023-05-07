@@ -45,7 +45,7 @@ const Hero = () => {
         </div>
         <div className="flex justify-center w-full lg:justify-end">
           <img
-            className="w-full h-auto object-cover sm:w-8/12 md:w-full md:object-contain lg:w-10/12 lg:object-cover"
+            className="w-full h-auto object-cover sm:w-full md:object-contain lg:w-10/12 lg:object-cover"
             src={mainImg}
             alt="main"
           />
