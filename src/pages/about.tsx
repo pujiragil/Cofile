@@ -1,5 +1,6 @@
 import {
   AboutBanner,
+  AboutCard,
   AboutContent,
   AboutMilestones,
   AboutTeam,
@@ -12,6 +13,7 @@ const About = () => {
       <AboutBanner />
       <AboutMilestones />
       <AboutTeam />
+      <AboutCard />
     </>
   );
 };
