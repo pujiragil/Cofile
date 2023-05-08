@@ -12,7 +12,7 @@ const Pricing = () => {
       <PriceContent />
       <PriceBanner />
       <PriceCard />
-      <div className="space-y-36">
+      <div className="space-y-32">
         <SponsorShip />
         <CardPromote />
       </div>
