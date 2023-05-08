@@ -1,4 +1,24 @@
 {
+  "navbar": {
+    "iconImg": "/cofile.png",
+    "links": [
+      {
+        "id": 1,
+        "path": "/",
+        "name": "Home"
+      },
+      {
+        "id": 2,
+        "path": "/about",
+        "name": "About us"
+      },
+      {
+        "id": 3,
+        "path": "/pricing",
+        "name": "Pricing"
+      }
+    ]
+  },
   "home": {
     "hero": {
       "title": "Check Currency Exchange Rate in Real Time",
@@ -225,5 +245,100 @@
       "description": "With a professional approach, we successfully build this remote team",
       "img": "/fully-remote-team.png"
     }
+  },
+  "price": {
+    "content": {
+      "title": "Pricing Plan",
+      "description": "Here you can choose the plan that suits with your business needs."
+    },
+    "plan": [
+      {
+        "id": 1,
+        "iconImg": "/beginner.png",
+        "title": "Beginner",
+        "description": "For you who just started the business",
+        "subtitle": "Free",
+        "lists": [
+          {
+            "id": 1,
+            "value": "Currency exchange features"
+          },
+          {
+            "id": 2,
+            "value": "Worldwide currency comparison"
+          },
+          {
+            "id": 3,
+            "value": "30 days history"
+          },
+          {
+            "id": 4,
+            "value": "850 limit exchange usage"
+          }
+        ]
+      },
+      {
+        "id": 2,
+        "iconImg": "/professional.png",
+        "title": "Professional",
+        "description": "For professional ready to level up",
+        "subtitle": "$4 /month",
+        "lists": [
+          {
+            "id": 1,
+            "value": "Currency exchange features"
+          },
+          {
+            "id": 2,
+            "value": "Worldwide currency comparison"
+          },
+          {
+            "id": 3,
+            "value": "All time history"
+          },
+          {
+            "id": 4,
+            "value": "Unlimited exchange usage"
+          },
+          {
+            "id": 5,
+            "value": "24/7 Customer Support"
+          }
+        ]
+      },
+      {
+        "id": 3,
+        "iconImg": "/business.png",
+        "title": "Business",
+        "description": "Dedicated to boost your business",
+        "subtitle": "$8 /month",
+        "lists": [
+          {
+            "id": 1,
+            "value": "Currency exchange features"
+          },
+          {
+            "id": 2,
+            "value": "Worldwide currency comparison"
+          },
+          {
+            "id": 3,
+            "value": "All time history"
+          },
+          {
+            "id": 4,
+            "value": "Unlimited exchange usage"
+          },
+          {
+            "id": 5,
+            "value": "24/7 Customer Support"
+          },
+          {
+            "id": 6,
+            "value": "Feature Customization Request"
+          }
+        ]
+      }
+    ]
   }
 }
