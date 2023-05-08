@@ -11,3 +11,4 @@ export { default as AboutContent } from "./About/AboutContent";
 export { default as AboutBanner } from "./About/AboutBanner";
 export { default as AboutMilestones } from "./About/AboutMilestones";
 export { default as AboutTeam } from "./About/AboutTeam";
+export { default as AboutCard } from "./About/AboutCard";

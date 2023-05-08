@@ -10,7 +10,7 @@ import {
 const AboutMilestones = () => {
   return (
     <div className="container mx-auto px-6 pt-20 pb-16 flex justify-center">
-      <div className="max-w-[908px] grid gap-12 sm:w-4/5 md:w-full md:grid-cols-3">
+      <div className="max-w-[908px] grid gap-12 w-full sm:w-4/5 md:w-full md:grid-cols-3">
         <Heading type={HeadingType.H1} value="Our Milestones" />
         <div className="space-y-4">
           <img
