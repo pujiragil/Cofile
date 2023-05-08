@@ -17,7 +17,7 @@ const SponsorShip = () => {
           styles="text-center md:text-left"
           value={title}
         />
-        <div className="py-5 flex flex-col items-center gap-12 md:flex-row md:gap-6 lg:gap-12">
+        <div className="py-5 grid place-items-center gap-12 sm:grid-cols-2 md:grid-cols-4 md:gap-6 lg:gap-12">
           {brands.map((brand) => (
             <img
               key={brand.id}
