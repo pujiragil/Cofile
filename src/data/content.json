@@ -165,5 +165,65 @@
         }
       ]
     }
+  },
+  "about": {
+    "content": {
+      "title": "We are a Group of Individuals With a Big Mission",
+      "descriptions": [
+        {
+          "id": 1,
+          "value": "We are a group of individuals with a big mission to help many businesses all over the world reach their biggest potential."
+        },
+        {
+          "id": 2,
+          "value": "We provide them with our stable mobile apps to help them maintain their business. And obviously, we will continuously improve our products and services."
+        }
+      ]
+    },
+    "milestones": {
+      "title": "Our Milestones",
+      "datas": [
+        {
+          "id": 1,
+          "iconImg": "/star.png",
+          "rating": "4.85 / 5.0",
+          "description": "Rating on Google Play & App Store"
+        },
+        {
+          "id": 2,
+          "iconImg": "/download.png",
+          "rating": "8.5k ++",
+          "description": "Downloads on Google Play & App Store"
+        }
+      ]
+    },
+    "teams": {
+      "title": "Our Super Team",
+      "datas": [
+        {
+          "id": 1,
+          "profileImg": "/team-1.png",
+          "name": "John Hughes",
+          "job": "Backend Developer"
+        },
+        {
+          "id": 2,
+          "profileImg": "/team-2.png",
+          "name": "Michael Armstrong",
+          "job": "Full Stack Developer"
+        },
+        {
+          "id": 3,
+          "profileImg": "/team-3.png",
+          "name": "Phil Schneider",
+          "job": "Frontend Developer"
+        }
+      ]
+    },
+    "card": {
+      "title": "Fully Remote Team",
+      "description": "With a professional approach, we successfully build this remote team",
+      "img": "/fully-remote-team.png"
+    }
   }
 }
