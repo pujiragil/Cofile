@@ -45,7 +45,7 @@ const Navbar = () => {
 
       <div
         className={`absolute top-0 left-0 bg-white w-full px-6 py-6 flex justify-between items-start drop-shadow-lg md:hidden ${
-          isOpen ? "translate-y-0" : "-translate-y-full"
+          isOpen ? "translate-y-0" : "-translate-y-[110%]"
         } transition-all duration-500 ease-in-out`}
       >
         <ul className="grid gap-5 h-fit text-black/70 text-base font-semibold">
