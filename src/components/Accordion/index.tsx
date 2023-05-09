@@ -33,11 +33,11 @@ const AccordionItem: FC<AccordionItemProps> = ({
           value={title}
           styles={`cursor-pointer before:content-['‣'] before:text-[28px] before:absolute before:left-2 ${
             isOpen ? "before:rotate-90" : "before:rotate-0"
-          } before:transition-all before:duration-200 before:ease-in`}
+          } before:transition-all before:duration-300 before:ease-in`}
         />
       </div>
-      {isOpen && (
-        <div className="pl-8">
+      <div className={`pl-8 grid ${isOpen ? "grid-rows-[1fr]" : "grid-rows-[0fr]"} transition-all duration-500`}>
+        <div className="overflow-hidden">
           <Paragraph
             size={ParagraphSize.BS}
             weight={ParagraphWeight.N}
@@ -45,7 +45,7 @@ const AccordionItem: FC<AccordionItemProps> = ({
             value={description}
           />
         </div>
-      )}
+      </div>
     </div>
   );
 };
