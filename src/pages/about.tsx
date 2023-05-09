@@ -5,10 +5,14 @@ import {
   AboutMilestones,
   AboutTeam,
 } from "@/components";
+import Head from "next/head";
 
 const About = () => {
   return (
     <>
+      <Head>
+        <title>Cofile - About Us</title>
+      </Head>
       <AboutContent />
       <AboutBanner />
       <AboutMilestones />
