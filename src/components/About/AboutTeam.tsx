@@ -1,3 +1,4 @@
+import datas from "../../data/content.json";
 import { FC } from "react";
 import {
   Heading,
@@ -9,6 +10,7 @@ import {
 } from "../globals";
 
 interface TeamMemberProps {
+  id: number;
   profileImg: string;
   name: string;
   job: string;
@@ -38,15 +40,22 @@ const TeamMember: FC<TeamMemberProps> = ({ profileImg, name, job }) => {
   );
 };
 
+interface AboutTeamContentProps {
+  title: string;
+  datas: TeamMemberProps[];
+}
+
 const AboutTeam = () => {
+  const { title, datas: teams } = datas.about.teams as AboutTeamContentProps;
+
   return (
     <div className="container mx-auto px-6 py-16 flex justify-center">
       <div className="max-w-[908px] flex flex-col gap-1 w-full sm:w-4/5 md:w-full">
-        <Heading type={HeadingType.H3} value="Our Super Team" />
+        <Heading type={HeadingType.H3} value={title} />
         <div className="grid gap-12 sm:grid-cols-2 md:grid-cols-3">
-          <TeamMember profileImg="/team-1.png" name="John Hughes" job="Sales & Marketing"/>
-          <TeamMember profileImg="/team-2.png" name="Michael Armstrong" job="Full Stack Developer"/>
-          <TeamMember profileImg="/team-3.png" name="Phil Schneider" job="Frontend Developer"/>
+          {teams.map((team) => (
+            <TeamMember key={team.id} {...team} />
+          ))}
         </div>
       </div>
     </div>
