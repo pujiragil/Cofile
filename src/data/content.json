@@ -1,6 +1,6 @@
 {
   "navbar": {
-    "iconImg": "/cofile.png",
+    "iconImg": "/cofile.webp",
     "links": [
       {
         "id": 1,
@@ -26,33 +26,33 @@
       "stores": [
         {
           "id": 1,
-          "img": "/app-store.png"
+          "img": "/app-store.webp"
         },
         {
           "id": 2,
-          "img": "/play-store.png"
+          "img": "/play-store.webp"
         }
       ],
-      "mainImg": "/main.png"
+      "mainImg": "/main.webp"
     },
     "sponsorship": {
       "title": "Trusted by",
       "brands": [
         {
           "id": 1,
-          "img": "/paple.png"
+          "img": "/paple.webp"
         },
         {
           "id": 2,
-          "img": "/masbobz.png"
+          "img": "/masbobz.webp"
         },
         {
           "id": 3,
-          "img": "/notion.png"
+          "img": "/notion.webp"
         },
         {
           "id": 4,
-          "img": "/super.png"
+          "img": "/super.webp"
         }
       ]
     },
@@ -61,14 +61,14 @@
         "id": 1,
         "title": "Easy to Use",
         "description": "Our clean and intuitive design will help you operate the apps easily",
-        "mainImg": "/card-1.png",
+        "mainImg": "/card-1.webp",
         "orderBy": "content"
       },
       {
         "id": 2,
         "title": "Upgrade When You Need",
         "description": "We committed to provide the free plan forever. Once you need an upgrade, we will be there for you",
-        "mainImg": "/card-2.png",
+        "mainImg": "/card-2.webp",
         "orderBy": "image"
       }
     ],
@@ -97,14 +97,14 @@
       "datas": [
         {
           "id": 1,
-          "avatar": "/testimonial-1.png",
+          "avatar": "/testimonial-1.webp",
           "name": "Ashley Rock",
           "job": "Founder of Paple",
           "description": "Really happy with the product and kind services provided by Cofile. Will recommend it to the world!"
         },
         {
           "id": 2,
-          "avatar": "/testimonial-2.png",
+          "avatar": "/testimonial-2.webp",
           "name": "Natalie Bloom",
           "job": "Marketing of Simpage",
           "description": "Top class product and services! Since my first sign up, they helped my team a lot."
@@ -141,17 +141,17 @@
       "stores": [
         {
           "id": 1,
-          "img": "/app-store.png"
+          "img": "/app-store.webp"
         },
         {
           "id": 2,
-          "img": "/play-store.png"
+          "img": "/play-store.webp"
         }
       ],
-      "mainImg": "/promote.png"
+      "mainImg": "/promote.webp"
     },
     "footer": {
-      "mainImg": "/cofile.png",
+      "mainImg": "/cofile.webp",
       "socials": [
         {
           "id": 1,
@@ -234,19 +234,19 @@
       "datas": [
         {
           "id": 1,
-          "profileImg": "/team-1.png",
+          "profileImg": "/team-1.webp",
           "name": "John Hughes",
           "job": "Backend Developer"
         },
         {
           "id": 2,
-          "profileImg": "/team-2.png",
+          "profileImg": "/team-2.webp",
           "name": "Michael Armstrong",
           "job": "Full Stack Developer"
         },
         {
           "id": 3,
-          "profileImg": "/team-3.png",
+          "profileImg": "/team-3.webp",
           "name": "Phil Schneider",
           "job": "Frontend Developer"
         }
@@ -255,7 +255,7 @@
     "card": {
       "title": "Fully Remote Team",
       "description": "With a professional approach, we successfully build this remote team",
-      "img": "/fully-remote-team.png"
+      "img": "/fully-remote-team.webp"
     }
   },
   "price": {
