@@ -75,19 +75,19 @@
     "features": [
       {
         "id": 1,
-        "img": "/features-1.png",
+        "img": "/features-1.svg",
         "title": "24 Hours Customer Service",
         "description": "We respect your passion to run your business by always accompany you"
       },
       {
         "id": 2,
-        "img": "/features-2.png",
+        "img": "/features-2.svg",
         "title": "Currencies All Over The World",
         "description": "Our complete and real-time currencies database will help your business"
       },
       {
         "id": 3,
-        "img": "/features-3.png",
+        "img": "/features-3.svg",
         "title": "Upgrade Once You Ready",
         "description": "No worries, we always welcome you once you ready to upgrade"
       }
@@ -112,7 +112,7 @@
       ]
     },
     "accordions": {
-      "img": "/faq.png",
+      "img": "/faq.svg",
       "title": "Frequently Asked Questions",
       "datas": [
         {
@@ -217,13 +217,13 @@
       "datas": [
         {
           "id": 1,
-          "iconImg": "/star.png",
+          "iconImg": "/star.svg",
           "rating": "4.85 / 5.0",
           "description": "Rating on Google Play & App Store"
         },
         {
           "id": 2,
-          "iconImg": "/download.png",
+          "iconImg": "/download.svg",
           "rating": "8.5k ++",
           "description": "Downloads on Google Play & App Store"
         }
@@ -266,7 +266,7 @@
     "plan": [
       {
         "id": 1,
-        "iconImg": "/beginner.png",
+        "iconImg": "/beginner.svg",
         "title": "Beginner",
         "description": "For you who just started the business",
         "subtitle": "Free",
@@ -291,7 +291,7 @@
       },
       {
         "id": 2,
-        "iconImg": "/professional.png",
+        "iconImg": "/professional.svg",
         "title": "Professional",
         "description": "For professional ready to level up",
         "subtitle": "$4 /month",
@@ -320,7 +320,7 @@
       },
       {
         "id": 3,
-        "iconImg": "/business.png",
+        "iconImg": "/business.svg",
         "title": "Business",
         "description": "Dedicated to boost your business",
         "subtitle": "$8 /month",
