@@ -21,8 +21,8 @@ const Content: FC<ContentProps> = (props) => {
   return (
     <div className="space-y-4">
       <Image
-        width={36}
-        height={36}
+        width={24}
+        height={24}
         className="w-9 h-9 object-cover"
         src={props.iconImg}
         alt="about-icon"

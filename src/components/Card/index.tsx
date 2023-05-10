@@ -8,6 +8,7 @@ import {
   ParagraphSize,
   ParagraphWeight,
 } from "../globals";
+import Image from "next/image";
 
 interface CardProps {
   orderBy: "content" | "image";
@@ -39,7 +40,9 @@ const Card: FC<CardProps> = ({ orderBy, title, description, imageLink }) => {
           orderBy === "image" ? "order-1" : "order-2"
         }`}
       >
-        <img
+        <Image
+          width={431}
+          height={431}
           className="w-full h-auto object-cover sm:w-full lg:w-10/12"
           src={imageLink}
           alt="card-image"

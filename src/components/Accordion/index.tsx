@@ -8,6 +8,7 @@ import {
   ParagraphSize,
   ParagraphWeight,
 } from "../globals";
+import Image from "next/image";
 
 interface AccordionItemProps {
   isOpen: boolean;
@@ -36,7 +37,11 @@ const AccordionItem: FC<AccordionItemProps> = ({
           } before:transition-all before:duration-300 before:ease-in`}
         />
       </div>
-      <div className={`pl-8 grid ${isOpen ? "grid-rows-[1fr]" : "grid-rows-[0fr]"} transition-all duration-500`}>
+      <div
+        className={`pl-8 grid ${
+          isOpen ? "grid-rows-[1fr]" : "grid-rows-[0fr]"
+        } transition-all duration-500`}
+      >
         <div className="overflow-hidden">
           <Paragraph
             size={ParagraphSize.BS}
@@ -89,7 +94,13 @@ const Accordions = () => {
     <section className="flex justify-center p-6">
       <div className="max-w-[908px] flex flex-col gap-12 sm:w-4/5 md:w-full md:flex-row">
         <div className="py-5 space-y-4 md:basis-1/2">
-          <img className="w-12 h-12 object-cover" src={img} alt="faq" />
+          <Image
+            width={24}
+            height={24}
+            className="w-12 h-12 object-cover"
+            src={img}
+            alt="faq"
+          />
           <Heading type={HeadingType.H2} value={title} />
         </div>
         <div className="flex flex-col py-6 md:basis-1/2">

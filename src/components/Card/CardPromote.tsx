@@ -1,3 +1,4 @@
+import Image from "next/image";
 import datas from "../../data/content.json";
 import {
   Heading,
@@ -34,7 +35,9 @@ const CardPromote = () => {
           </div>
           <div className="py-5 flex flex-col gap-4 sm:flex-row sm:justify-center md:flex-col">
             {stores.map((store) => (
-              <img
+              <Image
+                width={341}
+                height={103}
                 key={store.id}
                 className="w-[170px] h-auto object-contain"
                 src={store.img}
@@ -45,7 +48,9 @@ const CardPromote = () => {
         </div>
 
         <div className="flex justify-center md:basis-1/2">
-          <img
+          <Image
+            width={431}
+            height={288}
             className="w-full h-auto object-cover"
             src={mainImg}
             alt="promote"

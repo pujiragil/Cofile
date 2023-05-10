@@ -1,3 +1,4 @@
+import Image from "next/image";
 import datas from "../../data/content.json";
 import { Heading, HeadingType } from "../globals";
 
@@ -19,10 +20,12 @@ const SponsorShip = () => {
         />
         <div className="py-5 grid place-items-center gap-12 sm:grid-cols-2 md:grid-cols-4 md:gap-6 lg:gap-12">
           {brands.map((brand) => (
-            <img
+            <Image
               key={brand.id}
-              className="w-48 h-auto object-cover"
+              width={381}
+              height={132}
               src={brand.img}
+              className="w-48 h-auto object-cover"
               alt="paple"
             />
           ))}

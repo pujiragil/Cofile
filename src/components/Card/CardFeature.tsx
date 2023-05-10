@@ -8,6 +8,7 @@ import {
   ParagraphSize,
   ParagraphWeight,
 } from "../globals";
+import Image from "next/image";
 
 interface CardItemProps {
   title: string;
@@ -18,7 +19,9 @@ interface CardItemProps {
 const CardItem: FC<CardItemProps> = ({ title, description, imageLink }) => {
   return (
     <div className="flex flex-col gap-4">
-      <img
+      <Image
+        width={24}
+        height={24}
         className="w-12 h-12 object-cover"
         src={imageLink}
         alt="features-1"

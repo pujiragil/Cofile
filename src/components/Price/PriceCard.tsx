@@ -8,6 +8,7 @@ import {
   ParagraphSize,
   ParagraphWeight,
 } from "../globals";
+import Image from "next/image";
 
 interface CardItemContentProps {
   id: number;
@@ -22,8 +23,10 @@ const CardItem: FC<CardItemContentProps> = (props) => {
   return (
     <div className="space-y-8">
       <div className="flex flex-col gap-4">
-        <img
-          className="w-12 h-12 object-cover"
+        <Image
+          width={24}
+          height={24}
+          className="w-9 h-9 object-cover"
           src={props.iconImg}
           alt="beginner"
         />
