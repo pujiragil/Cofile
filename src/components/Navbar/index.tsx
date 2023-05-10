@@ -2,6 +2,7 @@ import Link from "next/link";
 import datas from "../../data/content.json";
 import { useRouter } from "next/router";
 import { useState } from "react";
+import Image from "next/image";
 
 interface NavbarContentProps {
   iconImg: string;
@@ -17,14 +18,18 @@ const Navbar = () => {
     <nav className="relative">
       <div className="container mx-auto flex justify-between items-center py-2 px-6 pt-6">
         <Link href="/">
-          <img
+          <Image
+            width={221}
+            height={97}
             className="h-10 w-auto object-cover"
             src={iconImg}
             alt="cofile"
           />
         </Link>
-        <img
+        <Image
           onClick={() => setIsOpen(true)}
+          width={24}
+          height={24}
           className="w-8 h-8 object-cover cursor-pointer md:hidden"
           src="/hamburger.svg"
           alt="hamburger"
@@ -63,6 +68,8 @@ const Navbar = () => {
         </ul>
         <img
           onClick={() => setIsOpen(false)}
+          height={24}
+          width={24}
           className="w-8 h-8 object-cover cursor-pointer"
           src="/hamburger-close.svg"
           alt="hamburger-close"

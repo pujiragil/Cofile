@@ -1,5 +1,6 @@
 import Link from "next/link";
 import datas from "../../data/content.json";
+import Image from "next/image";
 
 interface FooterContentProps {
   mainImg: string;
@@ -15,8 +16,10 @@ const Footer = () => {
       <div className="container mx-auto flex flex-col justify-center gap-10 px-6 pt-14 pb-6 md:pb-14">
         <div className="flex flex-col gap-6 md:flex-row md:justify-between">
           <Link href="/">
-            <img
-              className="w-[110px] h-auto object-cover"
+            <Image
+              width={221}
+              height={97}
+              className="h-10 w-auto object-cover"
               src={mainImg}
               alt="cofile"
             />
@@ -24,7 +27,9 @@ const Footer = () => {
           <div className="flex items-center gap-4">
             {socials.map((social) => (
               <a key={social.id} href={social.link} target="_blank">
-                <img
+                <Image
+                  width={24}
+                  height={24}
                   className="w-6 h-6 object-cover"
                   src={social.img}
                   alt="social-icon"
