@@ -8,6 +8,7 @@ import {
   ParagraphSize,
   ParagraphWeight,
 } from "../globals";
+import Image from "next/image";
 
 interface ContentProps {
   id: number;
@@ -19,7 +20,9 @@ interface ContentProps {
 const Content: FC<ContentProps> = (props) => {
   return (
     <div className="space-y-4">
-      <img
+      <Image
+        width={36}
+        height={36}
         className="w-9 h-9 object-cover"
         src={props.iconImg}
         alt="about-icon"

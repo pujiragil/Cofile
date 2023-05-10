@@ -1,3 +1,4 @@
+import Image from "next/image";
 import datas from "../../data/content.json";
 import {
   Heading,
@@ -29,8 +30,10 @@ const AboutCard = () => {
             value={card.description}
           />
         </div>
-        <img
-          className="w-full h-auto object-cover"
+        <Image
+          width={313}
+          height={208}
+          className="w-full h-auto object-cover object-center"
           src={card.img}
           alt="fully-remote-team"
         />

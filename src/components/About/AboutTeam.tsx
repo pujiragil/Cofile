@@ -8,6 +8,7 @@ import {
   ParagraphSize,
   ParagraphWeight,
 } from "../globals";
+import Image from "next/image";
 
 interface TeamMemberProps {
   id: number;
@@ -19,10 +20,13 @@ interface TeamMemberProps {
 const TeamMember: FC<TeamMemberProps> = ({ profileImg, name, job }) => {
   return (
     <div className="pt-5 space-y-4">
-      <img
+      <Image
+        width={235}
+        height={235}
         className="w-full h-auto object-cover"
         src={profileImg}
         alt="profile-image"
+
       />
       <Paragraph
         size={ParagraphSize.BS}
