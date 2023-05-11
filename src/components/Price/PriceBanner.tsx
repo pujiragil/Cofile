@@ -5,8 +5,9 @@ const PriceBanner = () => {
     <Image
       width={1920}
       height={447}
-      className="h-[260px] w-full object-cover sm:h-[320px] md:h-[400px]"
+      priority={true}
       src="/banner.webp"
+      className="h-[260px] w-full object-cover sm:h-[320px] md:h-[400px]"
       alt="pricing-banner"
     />
   );

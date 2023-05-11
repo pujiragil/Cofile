@@ -36,11 +36,12 @@ const Hero = () => {
           <div className="py-5 flex flex-col gap-2 sm:flex-row sm:justify-center md:justify-normal md:flex-col lg:flex-row">
             {stores.map((store) => (
               <Image
+                key={store.id}
                 width={341}
                 height={103}
-                key={store.id}
-                className="w-[170px] h-auto object-contain lg:w-40"
+                priority={true}
                 src={store.img}
+                className="w-[170px] h-auto object-contain lg:w-40"
                 alt="app-store"
               />
             ))}
@@ -50,8 +51,9 @@ const Hero = () => {
           <Image
             width={431}
             height={431}
-            className="w-full h-auto object-cover sm:w-full md:object-contain lg:w-10/12 lg:object-cover"
+            priority={true}
             src={mainImg}
+            className="w-full h-auto object-cover sm:w-full md:object-contain lg:w-10/12 lg:object-cover"
             alt="main"
           />
         </div>
