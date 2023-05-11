@@ -66,7 +66,7 @@ const Navbar = () => {
             </li>
           ))}
         </ul>
-        <img
+        <Image
           onClick={() => setIsOpen(false)}
           height={24}
           width={24}

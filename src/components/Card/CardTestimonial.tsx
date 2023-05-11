@@ -8,6 +8,7 @@ import {
   ParagraphSize,
   ParagraphWeight,
 } from "../globals";
+import Image from "next/image";
 
 interface CardItemProps {
   description: string;
@@ -19,7 +20,13 @@ interface CardItemProps {
 const CardItem: FC<CardItemProps> = ({ avatar, name, job, description }) => {
   return (
     <div className="space-y-12">
-      <img className="w-24 h-24 object-cover" src={avatar} alt="testimonial" />
+      <Image
+        width={97}
+        height={97}
+        className="w-24 h-24 object-cover"
+        src={avatar}
+        alt="testimonial"
+      />
       <div className="space-y-2">
         <p className="font-semibold text-4xl text-secondary-100">“ ”</p>
         <div className="flex flex-col leading-6">
